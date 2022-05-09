@@ -22,24 +22,24 @@ public class Ejecutor {
         Persona persona1 = new Persona("René Elizalde", "1100909909", barrio1);
         
         System.out.println("------------------------------------------");
-        System.out.printf("El barrio de la persona es: %s\n Y pertenece a la "
-                + "ciudad: %s\n",
+        System.out.printf("El barrio de la persona %s es: %s\n Y pertenece a la "
+                + "ciudad: %s\n", persona1.obtenerNombre(),
                 persona1.obtenerBarrio().obtenerNombre(),
                 persona1.obtenerBarrio().obtenerCiudad().obtenerNombre());
         System.out.println("------------------------------------------");
         
         persona1.establecerBarrio(barrio2);
         
-        System.out.printf("El barrio de la persona es: %s\n Y pertenece a la "
-                + "ciudad: %s\n",
+        System.out.printf("El barrio de la persona %s es: %s\n Y pertenece a la "
+                + "ciudad: %s\n",persona1.obtenerNombre(),
                 persona1.obtenerBarrio().obtenerNombre(),
                 persona1.obtenerBarrio().obtenerCiudad().obtenerNombre());
         System.out.println("------------------------------------------");
         
         
         barrio2.establecerCiudad(ciudad2);
-        System.out.printf("El barrio de la persona es: %s\n Y pertenece a la "
-                + "ciudad: %s\n",
+        System.out.printf("El barrio de la persona %s es: %s\n Y pertenece a la "
+                + "ciudad: %s\n",persona1.obtenerNombre(),
                 persona1.obtenerBarrio().obtenerNombre(),
                 persona1.obtenerBarrio().obtenerCiudad().obtenerNombre());
         
